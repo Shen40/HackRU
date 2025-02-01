@@ -10,3 +10,18 @@ h1 {
     margin-top: 40px;
 }
 
+section{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left:100px;
+    position:relative;
+    color: black;
+    background:white;
+    width:1000px;
+    height:2200px;
+}
+
+section header{
+    margin-top: 10px
+    
+}
+

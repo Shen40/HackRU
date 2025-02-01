@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
+
     <head>
         <title>Put your Resume in the Bag </title>
         <link rel="stylesheet" href="index.css">
     </head>
+
     <body>
         <p align="left">
         <h1>Welcome! To Start Creating Your Resume, Fill Out The Following Information.</h1>
@@ -41,15 +43,23 @@
         <script>/*Submit Button*/</script>
         <p align="left">
         
-        <button onclick = "printToPage()">
+        <button onclick = "storeName()">
             save
         </button>
-        <p id="output">This text will change.</p>
+
+        <section id="output">
+            <header>
+                Temp
+            </header>
+        </section>
+
         <script>
-            function printToPage() {
-                document.getElementById("output").innerText = "Hello, World!";
-            }
+            function storeName() {
+            let name =document.getElementById("storeName").value;
+            document.getElementById("output").innerText = "Stored Value: " + name;
+        }
         </script>
+        
     <script src ="input.js"></script>
     </body>
 </html>
