@@ -1,20 +1,27 @@
 function storeName() {
-let name =document.getElementById("storeName").value;
-document.getElementById("userinput").innerText = "Stored Name: " + name;
+let name =document.getElementById("username").value;
+document.getElementById("output").innerText = "Stored Value: " + name;
 }
 
 function storeEducation() {
-let education = document.getElementById("storeEducation").value;
+let education = document.getElementById("userinput").value;
 }
 
 function storeProject() {
-let project=document.getElementById("storeProject").value;
+let project=document.getElementById("userinput").value;
 }
 
 function storeSkills() {
-let skills=document.getElementById("storeSkills").value;
+let skills=document.getElementById("userinput").value;
 }
 
 function storeWorkExperience() {
-let experience=document.getElementById("storeWorkExperience").value;
+let experience=document.getElementById("userinput").value;
 }
+
+const button = document.getElementById("Button1");
+
+
+
+
+

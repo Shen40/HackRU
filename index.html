@@ -1,28 +1,55 @@
 <!doctype html>
 <html>
     <head>
-        <title></title>
-        <link rel="stylesheet" href="/css/project.css">
+        <title>Put your Resume in the Bag </title>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <p align="left">
-        <h1>Projects</h1>
+        <h1>Welcome! To Start Creating Your Resume, Fill Out The Following Information.</h1>
         </p>
-        <script>/*Project*/</script>
+
+        <script>/*Name*/</script>
         <p align="left">
-        <label for="widerTextarea">Project:</label>
-        <input type="text" id="storeProject" name="Project">
-        <br><br>
+        <label for="widerTextarea">Name:</label>
+        <input type="text" id="storeName" name="Name">
+        <br>
+        </p>
+
+        <script>/*Education*/</script>
+        <p align="left">
+        <label for="widerTextarea">Education:</label>
+        <input type="text" id="storeEducation" name="Education">
+        <br>
+        </p>
+
+        <script>/*Work Experience*/</script>
+        <p align="left">
+        <label for="widerTextarea">Work Experience:</label>
+        <input type="text" id="storeWorkExperience" name="WorkExperience">
+        <br>
+    
+        <script>/*Skills*/</script>
+            <p align="left">
+            <label for="widerTextarea">Skills:</label>
+            <input type="text" id="storeSkills" name="Skills">
+        <br>
         
         <script>/*Submit Button*/</script>
         <p align="left">
-            
-        <br><br>
-        <a href="skills.html">
-        <button onclick= "/js/input.js/storeProject()">
-        Next
-        </a>
-        </button>
 
-</body>
+        <script>/*Submit Button*/</script>
+        <p align="left">
+        
+        <button onclick = "printToPage()">
+            save
+        </button>
+        <p id="output">This text will change.</p>
+        <script>
+            function printToPage() {
+                document.getElementById("output").innerText = "Hello, World!";
+            }
+        </script>
+    <script src ="input.js"></script>
+    </body>
 </html>
