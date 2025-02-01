@@ -78,7 +78,7 @@
   </style>
 </head>
 <body>
-  <div class="resume" >
+  <div class="resume">
     <!-- Header Section -->
     <div class="header">
       <h1 id="name">John Doe</h1>
@@ -92,7 +92,7 @@
         <span class="title" id="schoolName">Harvard University</span>
         <span class="date" id="gradDate">Expected Graduation: May 2025</span>
         <br>
-        <span class="subtitle"id="degree">Bachelor of Arts in Computer Science</span>
+        <span class="subtitle" id="degree">Bachelor of Arts in Computer Science</span>
         <ul>
           <li id="gpa">GPA: 3.9/4.0</li>
           <li id="course">Relevant Coursework: Data Structures, Algorithms, Machine Learning, Web Development</li>
@@ -110,13 +110,13 @@
         <span class="subtitle" id="location">Google, Mountain View, CA</span>
         <ul>
           <li id="description1">Developed and maintained backend services for Google Search using Python and C++.</li>
-          <li id="description1">Collaborated with a team of 5 engineers to optimize search algorithms, improving query response time by 15%.</li>
+          <li id="description2">Collaborated with a team of 5 engineers to optimize search algorithms, improving query response time by 15%.</li>
           <li id="description3">Presented project findings to senior leadership at the end of the internship.</li>
         </ul>
       </div>
 
       <div class="item">
-        <span class="title"id="jobTitle2">Research Assistant</span>
+        <span class="title" id="jobTitle2">Research Assistant</span>
         <span class="date" id="date2">September 2022 - May 2023</span>
         <br>
         <span class="subtitle" id="location2">Harvard University, Cambridge, MA</span>
@@ -133,7 +133,7 @@
       <ul>
         <li id="plang">Programming Languages: Python, Java, C++, JavaScript</li>
         <li id="wlang">Web Development: HTML, CSS, React, Node.js</li>
-        <li id ="tool">Tools: Git, Docker, AWS, TensorFlow</li>
+        <li id="tool">Tools: Git, Docker, AWS, TensorFlow</li>
       </ul>
     </div>
 
@@ -153,10 +153,28 @@
         <span class="title" id="title">Volunteer Tutor</span>
         <span class="date" id="date4">January 2022 - Present</span>
         <ul>
-          <li id="cdes">bbe<li>
+          <li id="cdes">bbe</li>
         </ul>
       </div>
     </div>
   </div>
+
+  <script>
+    function populateResume() {
+      var name = localStorage.getItem("userName") || "John Doe";
+      var education = localStorage.getItem("userEducation") || "No education provided";
+      var skills = localStorage.getItem("userSkills") || "No skills provided";
+      var project = localStorage.getItem("userProject") || "No projects provided";
+      var workExperience = localStorage.getItem("userWorkExperience") || "No work experience provided";
+      
+      document.getElementById("name").innerText = name;
+      document.getElementById("schoolName").innerText = education;
+      document.getElementById("degree").innerText = "Bachelor of Arts in Computer Science";
+      document.getElementById("plang").innerText = "Programming Languages: " + skills;
+      document.getElementById("jobTitle").innerText = workExperience;
+
+    }
+    window.onload = populateResume;
+  </script>
 </body>
 </html>
