@@ -18,4 +18,3 @@ let skills=document.getElementById("storeSkills").value;
 function storeWorkExperience() {
 let experience=document.getElementById("storeWorkExperience").value;
 }
-
