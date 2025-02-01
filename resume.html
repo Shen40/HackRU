@@ -82,7 +82,8 @@
     <!-- Header Section -->
     <div class="header">
       <h1 id="name">John Doe</h1>
-      <p id="address">123 Harvard Street, Cambridge, MA 02138 | (123) 456-7890 | john.doe@example.com</p>
+      <p id="address">123 Harvard Street, Cambridge, MA 02138 john.doe@example.com</p>
+      <p id="phoneNum">(123) 456-7890</p>
     </div>
 
     <!-- Education Section -->
@@ -166,12 +167,17 @@
       var skills = localStorage.getItem("userSkills") || "No skills provided";
       var project = localStorage.getItem("userProject") || "No projects provided";
       var workExperience = localStorage.getItem("userWorkExperience") || "No work experience provided";
-      
+      var address = localStorage.getItem("userAddress") || "No address provided";
+      var phoneNum = localStorage.getItem("userPhoneNum") || "No phone number provided";
+        
       document.getElementById("name").innerText = name;
       document.getElementById("schoolName").innerText = education;
       document.getElementById("degree").innerText = "Bachelor of Arts in Computer Science";
       document.getElementById("plang").innerText = "Programming Languages: " + skills;
       document.getElementById("jobTitle").innerText = workExperience;
+      document.getElementById("address").innerText = address;
+      document.getElementById("phoneNum").innerText = phoneNum;
+
 
     }
     window.onload = populateResume;
