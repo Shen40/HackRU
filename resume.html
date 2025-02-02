@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Resume</title>
+  <title>ResuMate</title>
   <style>
     body {
+      cursor: url("icons8-feather-pen-64.png"),auto;
       font-family: 'Times New Roman', serif;
       margin: 0;
       padding: 0;
@@ -174,7 +175,7 @@
       var major = localStorage.getItem("userMajor") || "No major provided";
       var gpa = localStorage.getItem("usergpa") || "No GPA provided";
       var revcourse = localStorage.getItem("userRevcourse") || "No relevant course work provided";
-      var activities = localStorage.getItem("userActivities") || "No GPA provided";
+      var activities = localStorage.getItem("userActivities") || "No Activities provided";
       
 
       document.getElementById("name").innerText = name;
@@ -189,7 +190,7 @@
       document.getElementById("degree").innerText = major;
       document.getElementById("gpa").innerText = "GPA: " + gpa;
       document.getElementById("revcourse").innerText = "Relevant Coursework: " + revcourse;
-      document.getElementById("activities").innerText = "Activities: " + activities;
+      document.getElementById("activities").innerText = activities;
       
     }
     window.onload = populateResume;

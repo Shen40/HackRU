@@ -33,8 +33,11 @@ section header{
     margin-top: 10px
     
 }
+
 button{
     font-family: Cinzel;
-    border-radius: 50px;
+    border-radius: 5px;
+    width:100px;
+    height:50px;
 }
 
