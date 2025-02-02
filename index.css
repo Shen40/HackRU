@@ -1,12 +1,17 @@
+nav img{
+    width:300px;
+    height:200px;
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #27292c;
+    font-family: Cinzel;
+    background: rgb(41, 41, 41);
     color: white;
     text-align: center;
 }
 
 
-h1 {
+nav h1 {
+    font-size: 100;
     margin-top: 40px;
 }
 
@@ -23,5 +28,9 @@ section{
 section header{
     margin-top: 10px
     
+}
+button{
+    font-family: Cinzel;
+    border-radius: 50px;
 }
 
