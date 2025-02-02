@@ -142,7 +142,7 @@
     <div class="section">
       <h2>Activities</h2>
       <div class="item">
-        <span class="title" id="actTitle">President, Harvard Coding Club</span>
+        <span class="title" id="activities">President, Harvard Coding Club</span>
         <span class="date" id="actDate">September 2022 - Present</span>
         <ul>
           <li id="ades">Organized weekly coding workshops and hackathons for over 100 members.</li>
@@ -167,12 +167,14 @@
       var skills = localStorage.getItem("userSkills") || "No skills provided";
       var project = localStorage.getItem("userProject") || "No projects provided";
       var workExperience = localStorage.getItem("userWorkExperience") || "No work experience provided";
+      var workExperience2 = localStorage.getItem("userWorkExperience2") || "No work experience provided";
       var address = localStorage.getItem("userAddress") || "No address provided";
       var phoneNum = localStorage.getItem("userPhoneNum") || "No phone number provided";
       var graduation = localStorage.getItem("userGraduation") || "No graduation date provided";
       var major = localStorage.getItem("userMajor") || "No major provided";
       var gpa = localStorage.getItem("usergpa") || "No GPA provided";
       var revcourse = localStorage.getItem("userRevcourse") || "No relevant course work provided";
+      var activities = localStorage.getItem("userActivities") || "No GPA provided";
       
 
       document.getElementById("name").innerText = name;
@@ -180,14 +182,15 @@
       document.getElementById("degree").innerText = "Bachelor of Arts in Computer Science";
       document.getElementById("plang").innerText = "Programming Languages: " + skills;
       document.getElementById("jobTitle").innerText = workExperience;
+      document.getElementById("jobTitle2").innerText = workExperience2;
       document.getElementById("address").innerText = address;
       document.getElementById("phoneNum").innerText = phoneNum;
       document.getElementById("gradDate").innerText = "Expected Graduation: " + graduation;
       document.getElementById("degree").innerText = major;
       document.getElementById("gpa").innerText = "GPA: " + gpa;
-      document.getElementbyId("revcourse").innerText = "Relevant Coursework: " + revcourse;
+      document.getElementById("revcourse").innerText = "Relevant Coursework: " + revcourse;
+      document.getElementById("activities").innerText = "Activities: " + activities;
       
-
     }
     window.onload = populateResume;
   </script>
