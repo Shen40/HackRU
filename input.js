@@ -1,3 +1,4 @@
+
 //Personal Info
     function storeName() {
     let name = document.getElementById("storeName").value;
@@ -47,6 +48,11 @@
     let experience = document.getElementById("storeWorkExperience").value;
     localStorage.setItem("userWorkExperience", experience);
     }
+    
+    function storeWorkExperience2() {
+    let experience2 = document.getElementById("storeWorkExperience2").value;
+    localStorage.setItem("userWorkExperience2", experience2);
+    }
 
 //Project
     function storeProject() {
@@ -60,4 +66,8 @@
     localStorage.setItem("userSkills", skills);
     }
 
-
+//Activities 
+    function storeActivities() {
+    let activities = document.getElementById("storeActivities").value;
+    localStorage.setItem("userActivities", activities);
+    }
