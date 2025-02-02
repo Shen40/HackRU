@@ -15,17 +15,45 @@
         <input type="text" id="storeEducation" name="Education">
         <br>
         </p>
+
+        <script>/*Graduation*/</script>
+        <p aligh="left">
+        <label for="widerTextarea">Graduation:</label>
+        <input type="text" id="storeGraduation" name="Graduation">
+        <br>
+        </p>
         
+        <script>/*Major*/</script>
+        <p aligh="left">
+        <label for="widerTextarea">Major ("Bachelor of Science/Arts in ___"):</label>
+        <input type="text" id="storeMajor" name="Major">
+        <br>
+        </p>
+
+        <script>/*GPA*/</script>
+        <p aligh="left">
+        <label for="widerTextarea">GPA:</label>
+        <input type="text" id="storegpa" name="gpa">
+        <br>
+        </p>
+
+        <script>/*Rev. Course*/</script>
+        <p aligh="left">
+        <label for="widerTextarea">Relevant Coursework:</label>
+        <input type="text" id="storeRevcourse" name="Revcourse">
+        <br>
+        </p>
+
         <script>/*Submit Button*/</script>
         <p align="left">
             
         <br><br>
         <a href="workExperience.html">
-        <button onclick= "storeEducation()">
+        <button onclick= "storeEducation(), storeGraduation(), storeMajor(), storegpa(), storeRevcourse()">
         Next
-    </button>
+        </button>
     </a>
-        <script src="/js/input.js"></script>
+        <script src="input.js"></script>
 
 </body>
 </html>

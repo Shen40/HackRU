@@ -1,34 +1,63 @@
-function storeName() {
+//Personal Info
+    function storeName() {
     let name = document.getElementById("storeName").value;
     localStorage.setItem("userName", name);
-}
+    }
 
-function storeEducation() {
-    let education = document.getElementById("storeEducation").value;
-    localStorage.setItem("userEducation", education);
-}
-
-function storeAddress() {
+    function storeAddress() {
     let address = document.getElementById("storeAddress").value;
     localStorage.setItem("userAddress", address);
-}
+    }
 
-function storePhoneNum() {
+    function storePhoneNum() {
     let phoneNum = document.getElementById("storePhoneNum").value;
     localStorage.setItem("userPhoneNum", phoneNum);
-}
+    }
 
-function storeProject() {
-    let project = document.getElementById("storeProject").value;
-    localStorage.setItem("userProject", project);
-}
+//Education
+    function storeEducation() {
+        let education = document.getElementById("storeEducation").value;
+        localStorage.setItem("userEducation", education);
+    }
 
-function storeSkills() {
-    let skills = document.getElementById("storeSkills").value;
-    localStorage.setItem("userSkills", skills);
-}
+    function storeGraduation (){
+        let graduation = document.getElementById("storeGraduation").value;
+        localStorage.setItem("userGraduation", graduation);
+    }
 
-function storeWorkExperience() {
+    function storeMajor (){
+        let major = document.getElementById("storeMajor").value;
+        localStorage.setItem("userMajor", major);
+    }
+
+    function storegpa (){
+        let gpa = document.getElementById("storegpa").value;
+        localStorage.setItem("usergpa", gpa);
+    }
+    
+    function storeRevcourse (){
+        let revcourse = document.getElementById("storeRevcourse").value;
+        localStorage.setItem("userRevcourse", revcourse);
+    }
+
+
+
+//Work Experience
+    function storeWorkExperience() {
     let experience = document.getElementById("storeWorkExperience").value;
     localStorage.setItem("userWorkExperience", experience);
-}
+    }
+
+//Project
+    function storeProject() {
+    let project = document.getElementById("storeProject").value;
+    localStorage.setItem("userProject", project);
+    }
+
+//Skills
+    function storeSkills() {
+    let skills = document.getElementById("storeSkills").value;
+    localStorage.setItem("userSkills", skills);
+    }
+
+

@@ -96,7 +96,7 @@
         <span class="subtitle" id="degree">Bachelor of Arts in Computer Science</span>
         <ul>
           <li id="gpa">GPA: 3.9/4.0</li>
-          <li id="course">Relevant Coursework: Data Structures, Algorithms, Machine Learning, Web Development</li>
+          <li id="revcourse"> revcourse </li>
         </ul>
       </div>
     </div>
@@ -169,7 +169,12 @@
       var workExperience = localStorage.getItem("userWorkExperience") || "No work experience provided";
       var address = localStorage.getItem("userAddress") || "No address provided";
       var phoneNum = localStorage.getItem("userPhoneNum") || "No phone number provided";
-        
+      var graduation = localStorage.getItem("userGraduation") || "No graduation date provided";
+      var major = localStorage.getItem("userMajor") || "No major provided";
+      var gpa = localStorage.getItem("usergpa") || "No GPA provided";
+      var revcourse = localStorage.getItem("userRevcourse") || "No relevant course work provided";
+      
+
       document.getElementById("name").innerText = name;
       document.getElementById("schoolName").innerText = education;
       document.getElementById("degree").innerText = "Bachelor of Arts in Computer Science";
@@ -177,7 +182,11 @@
       document.getElementById("jobTitle").innerText = workExperience;
       document.getElementById("address").innerText = address;
       document.getElementById("phoneNum").innerText = phoneNum;
-
+      document.getElementById("gradDate").innerText = "Expected Graduation: " + graduation;
+      document.getElementById("degree").innerText = major;
+      document.getElementById("gpa").innerText = "GPA: " + gpa;
+      document.getElementbyId("revcourse").innerText = "Relevant Coursework: " + revcourse;
+      
 
     }
     window.onload = populateResume;
