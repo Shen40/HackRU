@@ -8,7 +8,7 @@ body {
     background: rgb(41, 41, 41);
     color: white;
     text-align: center;
-    cursor: url("icons8-feather-50.png"), auto;
+    cursor: url("icons8-feather-pen-64.png"),auto;
 }
 
 
@@ -25,7 +25,8 @@ section{
     background:white;
     width:1000px;
     height:2200px;
-    cursor: url("icons8-feather-pen-24.png"), auto;
+    cursor: url("icons8-pen-64.png"), auto;
+    
 }
 
 section header{
@@ -35,6 +36,5 @@ section header{
 button{
     font-family: Cinzel;
     border-radius: 50px;
-    cursor: url("icons8-feather-50.png"), auto;
 }
 
